@@ -1,0 +1,12 @@
+<!--#include virtual="inc/header.html" -->
+<article>
+	<div class="row">
+		<div class="col-md-12 slide home">
+			<div class="text-overlay">
+				<h4>Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</h4>
+			</div>
+		</div>
+	</div>
+</article>
+<!--#include virtual="inc/footer.html" -->
+

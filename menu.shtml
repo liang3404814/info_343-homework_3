@@ -1,0 +1,52 @@
+<!--#include virtual="inc/header.html" -->
+<article>
+
+	<div class="row items-list template">
+		<div class="item-name">
+			<h3></h3>
+		</div>
+		<div class="item-description">
+			<p></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 slide menu">
+			<div class="text-overlay">
+				<h4>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens.</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="row content">
+		<div class="row ">
+			<div class="col-md-12 info-module pizza-list">
+				<div class="row info-field">
+					<h3>Pizzas</h3>
+				</div>
+				<div class="row info-content">
+					<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens.</p>
+					<p>Choose from one of these sizes:</p>
+					<div class="info-enum">
+						<p>Small (12") Medium (14") Large (17")</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-12 info-module drink-list">
+				<div class="row info-field">
+					<h3>Drink</h3>
+				</div>
+			</div>
+
+			<div class="col-md-12 info-module dessert-list">
+				<div class="row info-field">
+					<h3>Dessert</h3>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</article>
+<!--#include virtual="inc/footer.html" -->
