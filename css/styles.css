@@ -1,0 +1,199 @@
+@import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+.container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-left: 200px;
+	padding-right: 200px;
+	/*width: 800px;*/
+}
+
+body {
+	background-color: rgba(216, 217, 219, 1);
+	font-family: 'Georgia'; /* Add Fallbacks here! */
+	font-size: 22px;
+	color: #FFF;
+	font-weight: lighter;
+	text-rendering: optimizeLegibility; 
+}
+
+h3, h4 {
+	font-family: 'Georgia';
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+.right-bar,
+.left-bar {
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 100;
+}
+
+.row 
+
+.right-bar,
+footer .row {
+	background-color: rgba(239, 90, 40, 1);
+}
+
+nav li {
+	border-bottom: solid 1px #FFF;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.branding {
+	background-color: rgba(251, 236, 28, 1);
+	line-height: 60px;
+	padding: 40px 40px 20px 40px;
+}
+
+.branding h1 {
+	font-family: 'HelveticaNeue-CondensedBold', 
+	'Helvetica Neue', 
+	'Helvetica', 
+	'Arial', 
+	sans-serif;
+
+	padding-bottom: 15px;
+	text-align: center;
+	color: #000;
+	font-size: 300%;
+}
+
+.branding .logo {
+	max-width: 50%;
+	display: block;
+	margin: auto;
+}
+
+.order-info {
+	padding-left: 30px auto;
+	text-align: center;
+}
+
+.current-status h3 {
+	font-size: 150%;
+}
+
+.business-hours {
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.business-hours p {
+	font-size: 70%;
+}
+
+.order-prompt {
+	padding-bottom: 10px;
+}
+
+.order-call h3 {
+	font-size: 130%;
+	margin-top: 0px;
+}
+
+.number-box {
+	background-color: rgba(255, 255, 255, 1);
+	border-radius : 8px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.number-box p {
+	color: #000;
+	font-size: 110%
+}
+
+.slide {
+	margin-top: -140px;
+}
+
+.slide .text-overlay h4 {
+	position: absolute;
+	left: 14%;
+	bottom: 5%; 
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+	font-size: 130%;
+}
+
+.slide.home {
+	background-image: url(../img/pizza1.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.info-module .info-field h3 {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.info-module .info-content p {
+	font-size: 90%;
+}
+
+.biz-info .info-module {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.social-elements,
+.copyright-declaration {
+	text-align: center;
+}
+
+.social-elements .icon img {
+	height: 50px;
+}
+
+.copyright-declaration {
+	font-family:  'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	letter-spacing: 1px;
+	font-size: 80%;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
+
+/* Mobile Phone (iPhones, etc.) */
+@media (max-width: 500px) {
+
+	.branding h1 {
+		font-size: 220%;
+	}
+
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.slide .text-overlay h4 {
+		bottom: 2%;
+	}
+
+	.biz-info {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.copyright-declaration {
+		font-size: 50%;
+	}
+
+}
