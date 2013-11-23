@@ -43,6 +43,11 @@ a:visited {
 	text-decoration: none;
 }
 
+.btn:hover {
+	background-color: rgba(239, 90, 40, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
 .right-bar,
 .left-bar {
 	padding-right: 0px;
