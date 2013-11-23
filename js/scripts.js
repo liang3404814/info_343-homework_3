@@ -18,6 +18,10 @@ shoppingCart.factory('Categories', function() {
 	return com.dawgpizza.menuCategories;
 })
 
+function deliveryStatusControl ($scope) {
+	// body...
+}
+
 function listingControl ($scope, Menu, Categories) {
 	$scope.menu = Menu;
 	$scope.categories = Categories;
