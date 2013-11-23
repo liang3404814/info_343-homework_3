@@ -1,4 +1,5 @@
 @import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 
 .template {
 	display: none;
@@ -12,16 +13,21 @@
 	/*width: 800px;*/
 }
 
-body {
-	background-color: rgba(216, 217, 219, 1);
-	font-family: 'Georgia'; /* Add Fallbacks here! */
-	font-size: 22px;
-	color: #FFF;
-	text-rendering: optimizeLegibility; 
+* {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h3, h4 {
-	font-family: 'Georgia';
+	font-weight: 400;
+}
+
+
+body {
+	font-weight: 300;
+	background-color: rgba(216, 217, 219, 1);
+	font-size: 22px;
+	color: #FFF;
+	text-rendering: optimizeLegibility; 
 }
 
 a {
@@ -164,9 +170,12 @@ footer .row {
 	padding-right: 20px;
 }
 
-.info-module .info-field h3 {
+.info-module .info-field .info-title {
 	font-size: 110%;
-	font-weight: bold;
+	font-weight: 600;
+	border-left: 1em solid #3399FF;
+	border-bottom: thin solid #3399CC;
+	padding-left: 5px;
 }
 
 .info-module .info-content p {
@@ -190,8 +199,16 @@ footer .row {
 	font-size: 80%;
 }
 
-.items-list {
-	padding-left: 30px;
+.menu {
+
+}
+
+.list-group {
+	margin-left: 60px;
+}
+
+.list-item {
+	margin-bottom: 20px;
 }
 
 .item-name {
@@ -200,6 +217,8 @@ footer .row {
 
 .item-description {
 	font-size: 70%;
+	padding-right: 32%;
+	text-align: justify;
 }
 
 

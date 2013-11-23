@@ -1,0 +1,619 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"new",
+				"newTitle"
+			],
+			[
+				"title",
+				"titleElem"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"inser",
+				"insertCircles"
+			],
+			[
+				"quak",
+				"quakesUrl"
+			],
+			[
+				"us",
+				"usgs"
+			],
+			[
+				"get",
+				"getjson	$.getjson()"
+			],
+			[
+				"scro",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"scroll",
+				"scrollToElementOnPageNameExcept"
+			],
+			[
+				"offse",
+				"offset	.offset"
+			],
+			[
+				"off",
+				"offset	.offset"
+			],
+			[
+				"sc",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"hr",
+				"href	Attr"
+			],
+			[
+				"ren",
+				"renderDrink"
+			],
+			[
+				"pri",
+				"priceText"
+			],
+			[
+				"pizza",
+				"pizza-list"
+			],
+			[
+				"lar",
+				"largePrice"
+			],
+			[
+				"med",
+				"mediumPrice"
+			],
+			[
+				"sm",
+				"smallPrice"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ready",
+				"ready	$(document).ready"
+			],
+			[
+				"Hel",
+				"Helvetica"
+			],
+			[
+				"Helve",
+				"HelveticaNeue-CondensedBold"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"spa",
+				"letter-spacing"
+			],
+			[
+				"H",
+				"HelveticaNeue-CondensedBold"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"sie",
+				"font-size"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"ba",
+				"background-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/menu.js",
+			"settings":
+			{
+				"buffer_size": 4851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 2379,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/header.html",
+			"settings":
+			{
+				"buffer_size": 1444,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "menu.shtml",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/footer.html",
+			"settings":
+			{
+				"buffer_size": 1162,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"for",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"disp",
+				"Package Control: Disable Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: html",
+				"Snippet: Simple HTML5 Boilerplate"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <canvas>"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info_343-homework_3/js/scripts.js",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info_343-homework_3/inc/header.html",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/in-class-code-b/svg/index.html",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/evergreen-remake/README.md",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/in-class-code-b/todo/js/eventSource.js",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO 424/Map_D3/js/accidents.csv",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO 424/Map_D3/js/world-50m.json",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO 424/Map_D3/index.html",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/in-class-code-b/oop/css/styles.css",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info_343-homework_3/js/page-effect.js",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info_343-homework_3/index_original.html",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info_343-homework_3/.htaccess",
+		"/private/etc/apache2/users/liang3404814.conf",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/pizza1.jpg",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/twitter-bird-dark-bgs.png",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/pizza-oven.jpg",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/pizza-order.jpg",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/logo.png",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/logo-vertical.png",
+		"/Users/liang3404814/Development/INFO_COURSE/INFO343/info-343-hw-1/img/twitter-bird-light-bgs.png",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/etc/apache2/users/liang3404814.conf",
+		"/etc/apache2/httpd.conf",
+		"/Library/WebServer/Documents/index.html.en",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/Users/liang3404814/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"this.task",
+			"group",
+			"nav",
+			"shtml",
+			"options",
+			"configuration",
+			"options",
+			"shtml",
+			"handler",
+			"footer",
+			"open files from command"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/menu.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "inc/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "menu.shtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "inc/footer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1042,
+								1042
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

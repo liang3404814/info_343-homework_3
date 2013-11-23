@@ -17,9 +17,38 @@
 		</div>
 	</div>
 
-	<div class="row content">
-		<div class="row ">
-			<div class="col-md-12 info-module pizza-list">
+	<div class="row content" ng-controller="listingControl">
+		<div class="row menu">
+			<div class="col-md-12 info-module drink-list" ng-repeat="category in categories">
+				<div class="row info-field">
+					<h3 class="info-title">{{category.caption}}</h3>
+				</div>
+
+				<div class="list-group">
+					<div class="row list-item" ng-repeat="item in category.items">
+
+						<div class="row item-name">
+							<div class="row"><h3>{{item.name}}</h3></div>
+						</div>
+						<div class="row item-description">
+							<p class="row" ng-show="{{item.description}}">{{item.description}}.</p>
+							<div class="row btn-group" ng-show="{{item.prices}}">
+								<button type="button" class="btn btn-default">Small: {{item.prices[0] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default">Medium: {{item.prices[1] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default">Large: {{item.prices[2] | currency:"$"}}</button>
+							</div>
+							<div class="btn-group" ng-show="{{item.price}}">
+								<button type="button" class="btn btn-default">{{item.price | currency:"$"}}</button>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<!--<div class="col-md-12 info-module pizza-list">
 				<div class="row info-field">
 					<h3>Pizzas</h3>
 				</div>
@@ -43,7 +72,7 @@
 				<div class="row info-field">
 					<h3>Dessert</h3>
 				</div>
-			</div>
+			</div>-->
 
 		</div>
 	</div>
