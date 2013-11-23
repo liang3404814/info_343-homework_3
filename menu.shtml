@@ -38,7 +38,7 @@
 								<button type="button" class="btn btn-default add-to-cart-btn">Large: {{item.prices[2] | currency:"$"}}</button>
 							</div>
 							<div class="row" ng-if="item.price">
-								<button type="button" class="btn btn-default">{{item.price | currency:"$"}}</button>
+								<button type="button" class="btn btn-default">Regular: {{item.price | currency:"$"}}</button>
 							</div>
 						</div>
 
