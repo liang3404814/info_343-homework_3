@@ -33,9 +33,9 @@
 						<div class="row item-description">
 							<p class="row" ng-if="item.description">{{item.description}}.</p>
 							<div class="row" ng-if="item.prices">
-								<button type="button" class="btn btn-default">Small: {{item.prices[0] | currency:"$"}}</button>
-								<button type="button" class="btn btn-default">Medium: {{item.prices[1] | currency:"$"}}</button>
-								<button type="button" class="btn btn-default">Large: {{item.prices[2] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default add-to-cart-btn">Small: {{item.prices[0] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default add-to-cart-btn">Medium: {{item.prices[1] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default add-to-cart-btn">Large: {{item.prices[2] | currency:"$"}}</button>
 							</div>
 							<div class="row" ng-if="item.price">
 								<button type="button" class="btn btn-default">{{item.price | currency:"$"}}</button>

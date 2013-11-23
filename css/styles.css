@@ -223,9 +223,12 @@ footer .row {
 .item-description {
 	font-size: 70%;
 	padding-right: 32%;
-	text-align: justify;
+	text-align: left;
 }
 
+.add-to-cart-btn {
+	width: 120px;
+}
 
 .social-elements,
 .copyright-declaration {
@@ -264,6 +267,10 @@ footer .row {
 
 	.slide .text-overlay h4 {
 		bottom: 2%;
+	}
+
+	.add-to-cart-btn {
+		margin-bottom: 10px;
 	}
 
 	.biz-info {
