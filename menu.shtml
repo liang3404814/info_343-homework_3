@@ -163,7 +163,7 @@
 								<button type="button" class="btn btn-default add-to-cart-btn" ng-click="cart.addItem(item.type, item.name, 'large', item.prices[2])">Large: {{item.prices[2] | currency:"$"}}</button>
 							</div>
 							<div class="row" ng-if="item.price">
-								<button type="button" class="btn btn-default" ng-click="cart.addItem(item.type, item.name, 'regular', item.price)">Regular: {{item.price | currency:"$"}}</button>
+								<button type="button" class="btn btn-default" ng-click="cart.addItem(item.type, item.name, null, item.price)">Regular: {{item.price | currency:"$"}}</button>
 							</div>
 						</div>
 

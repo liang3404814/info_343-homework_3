@@ -65,24 +65,32 @@ shoppingCart.service('Cart', function() {
 			// if existing item found in cart
 			for (idx; idx < items.length; ++idx) {
 				item = items[idx];
-				if (item.type === type && item.name === name && item.size === size) {
-					quantity = (item.quantity || 0);
-					item.quantity = quantity + 1;
+				if (item.type === type && item.name === name) {
+					if ((size === null) || item.size === size) {
+						quantity = (item.quantity || 0);
+						item.quantity = quantity + 1;
 
-					found = true;
-					break;
+						found = true;
+						break;
+					}
 				}
 			}
 
 			// otherwise adds a new item to cart
 			if (!found) {
-				items.push({
+
+				var result = {
 					"type": type,
 					"name": name,
 					"quantity": 1,
 					"price": price,
-					"size": size
-				});
+				};
+
+				if (size) {
+					result.size = size;
+				}
+
+				items.push(result);
 			}
 
 			console.log(items);
@@ -90,16 +98,16 @@ shoppingCart.service('Cart', function() {
 
 		// completely remove all entries of the an item from the 
 		// cart
-	this.removeItem = function(type, name, size) {
-		var idx;
-		var item;
+		this.removeItem = function(type, name, size) {
+			var idx;
+			var item;
 
-		for (idx = 0; idx < items.length; ++idx) {
-			item = items[idx];
-			if (item.type === type && item.name === name && item.size === size) {
-				items.splice(idx, 1);
+			for (idx = 0; idx < items.length; ++idx) {
+				item = items[idx];
+				if (item.type === type && item.name === name && item.size === size) {
+					items.splice(idx, 1);
+				}
 			}
-		}
 	} // end of removeItem
 
 	this.removeAll = function() {
@@ -182,20 +190,6 @@ function orderControl ($scope, Cart, BizHours) {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
