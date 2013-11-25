@@ -1,0 +1,48 @@
+<div class="col-md-4 customer-info">
+	<div class="row">
+		<h3>Your Cart</h3>
+	</div>
+	<div class="row order-form">
+		<form novalidate>
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="customer-name">Name</label>
+					<input type="text" class="form-control" id="customer-name" placeholder="Enter name" ng-model="customerInfo.name"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="street-address">Street Address</label>
+					<input type="text" class="form-control" id="street-address" placeholder="Enter Street Address" ng-model="customerInfo.address1"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="apt-address">Apt / Room</label>
+					<input type="text" class="form-control" id="apt-address" placeholder="Enter Apt / Room, etc." ng-model="customerInfo.address2"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="zip">Zip</label>
+					<input type="text" class="form-control" id="zip" placeholder="Enter zip code" ng-model="customerInfo.zip"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="zip">Phone Number</label>
+					<input type="text" class="form-control" id="Enter Phone Number" placeholder="Enter zip code" ng-model="customerInfo.zip"/>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</div>
+
+<div class="col-md-8 order-summary">
+	
+</div>

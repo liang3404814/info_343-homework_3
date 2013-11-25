@@ -1,14 +1,7 @@
 <!--#include virtual="inc/header.html" -->
 <article>
 
-	<div class="row items-list template">
-		<div class="item-name">
-			<h3></h3>
-		</div>
-		<div class="item-description">
-			<p></p>
-		</div>
-	</div>
+	
 	<div class="row">
 		<div class="col-md-12 slide menu">
 			<div class="text-overlay">
@@ -17,9 +10,141 @@
 		</div>
 	</div>
 
+
+
+	<div class="row content cart" ng-controller="orderControl">
+		<div class="row content cartIntro" ng-if="!enabled">
+			<div class="alert alert-warning" ng-hide="bizHours.isDelivering()">
+				<strong>Dawg taking a nap!</strong>
+				We are only delivering from noon to 11:00pm, Monday through Saturday. You may still order now, but we will have to contact you later before we make your order.
+			</div>
+			<button class="btn btn-primary" ng-click="enableCart()">Start Ordering Online!</button>
+		</div>
+
+		<div class="row content cartMain" ng-if="enabled">
+			
+			<div class="col-md-4 customer-info">
+				<div class="row">
+					<h3>Your Order</h3>
+				</div>
+				<div class="row order-form">
+					<form novalidate>
+						<div class="row">
+							<div class="form-group col-md-12">
+								<label for="customer-name">Name</label>
+								<input type="text" class="form-control" id="customer-name" placeholder="Enter name" ng-model="orderInfo.name"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-12">
+								<label for="street-address">Street Address</label>
+								<input type="text" class="form-control" id="street-address" placeholder="Enter Street Address" ng-model="orderInfo.address1"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-12">
+								<label for="apt-address">Apt / Room</label>
+								<input type="text" class="form-control" id="apt-address" placeholder="Enter Apt / Room, etc." ng-model="orderInfo.address2"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-12">
+								<label for="zip">Zip</label>
+								<input type="text" class="form-control" id="zip" placeholder="Enter zip code" ng-model="orderInfo.zip"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-12">
+								<label for="zip">Phone Number</label>
+								<input type="text" class="form-control" id="Enter Phone Number" placeholder="Enter zip code" ng-model="orderInfo.phone"/>
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<div class="row submit">
+					<form method="POST" action="http://dawgpizza.com/orders/">
+						<input name="cart" ng-model="stringifiedOrder" ng-hide="true">
+						<button type="submit" class="btn btn-primary" ng-click="updateStringifiedOrder()" ng-disabled="orderInvalid()">Submit Order!</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-8 order-summary" ng-if="!cart.isEmpty()">
+				<table class="table table-conensed table-hover">
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Size</th>
+							<th>Quantity</th>
+							<th>Total Price</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tr ng-repeat="item in cart.getItems()">
+						<td>{{item.name}}</td>
+						<td>{{item.size}}</td>
+						<td>{{item.quantity}}</td>
+						<td>{{item.price * item.quantity}}</td>
+						<td>
+							[<a href="" ng-click="cart.removeItem(item.type, item.name, item.size)">&#215;</a>]
+						</td>
+					</tr>
+					<tfoot>
+						<tr>
+							<td>Subtotal</td>
+							<td></td>
+							<td></td>
+							<td>{{subTotal() | currency}}</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tax (9.5%)</td>
+							<td></td>
+							<td></td>
+							<td>{{tax() | currency}}</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>Grand Total</td>
+							<td></td>
+							<td></td>
+							<td>{{grandTotal() | currency}}</td>
+							<td></td>
+						</tr>
+
+					</tfoot>
+				</table>
+
+				<div class="alert alert-warning" ng-hide="cart.subTotal() >= 20">
+					<strong>Crying Dawg!</strong>
+					We enforce a $20 minimum order for deliveries.
+				</div>
+			</div>
+
+			<div class="col-md-8 order-summary" ng-if="cart.isEmpty()">
+				<p>Your cart is empty, get some dawg food?</p>
+			</div>
+		</div>
+		
+
+	</div>
+
 	<div class="row content" ng-controller="listingControl">
 		<div class="row menu">
-			<div class="col-md-12 info-module drink-list" ng-repeat="category in categories">
+			<div class="col-md-12 pizza-info">
+				<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens.</p>
+				<p>Choose from one of these sizes:</p>
+				<div class="info-enum">
+					<p>Small (12") Medium (14") Large (17")</p>
+				</div>
+			</div>
+			<div class="col-md-12 info-module drink-list" ng-repeat="category in categories" >
 				<div class="row info-field">
 					<h3 class="info-title">{{category.caption}}</h3>
 				</div>
@@ -30,49 +155,24 @@
 						<div class="row item-name">
 							<div class="row"><h3>{{item.name}}</h3></div>
 						</div>
-						<div class="row item-description">
+						<div class="row item-description" >
 							<p class="row" ng-if="item.description">{{item.description}}.</p>
 							<div class="row" ng-if="item.prices">
-								<button type="button" class="btn btn-default add-to-cart-btn">Small: {{item.prices[0] | currency:"$"}}</button>
-								<button type="button" class="btn btn-default add-to-cart-btn">Medium: {{item.prices[1] | currency:"$"}}</button>
-								<button type="button" class="btn btn-default add-to-cart-btn">Large: {{item.prices[2] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default add-to-cart-btn" ng-click="cart.addItem(item.type, item.name, 'small', item.prices[0])">Small: {{item.prices[0] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default add-to-cart-btn" ng-click="cart.addItem(item.type, item.name, 'medium', item.prices[1])">Medium: {{item.prices[1] | currency:"$"}}</button>
+								<button type="button" class="btn btn-default add-to-cart-btn" ng-click="cart.addItem(item.type, item.name, 'large', item.prices[2])">Large: {{item.prices[2] | currency:"$"}}</button>
 							</div>
 							<div class="row" ng-if="item.price">
-								<button type="button" class="btn btn-default">Regular: {{item.price | currency:"$"}}</button>
+								<button type="button" class="btn btn-default" ng-click="cart.addItem(item.type, item.name, item.price)">Regular: {{item.price | currency:"$"}}</button>
 							</div>
 						</div>
 
 					</div>
-					
+
 				</div>
-				
+
 			</div>
 
-			<!--<div class="col-md-12 info-module pizza-list">
-				<div class="row info-field">
-					<h3>Pizzas</h3>
-				</div>
-				<div class="row info-content">
-					<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens.</p>
-					<p>Choose from one of these sizes:</p>
-					<div class="info-enum">
-						<p>Small (12") Medium (14") Large (17")</p>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-md-12 info-module drink-list">
-				<div class="row info-field">
-					<h3>Drink</h3>
-				</div>
-			</div>
-
-			<div class="col-md-12 info-module dessert-list">
-				<div class="row info-field">
-					<h3>Dessert</h3>
-				</div>
-			</div>-->
 
 		</div>
 	</div>

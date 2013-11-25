@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="dawgPizzaShoppingCart">
+<html ng-app="dawgPizzaShoppingApp">
 <head>
 	<title>Dawg Pizza | Home</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -30,8 +30,13 @@
 					</nav>
 
 					<div class="order-info">
-						<div class="current-status">
-							<h3>We are <strong>open</strong> now.</h3>
+						<div class="current-status" ng-controller="bizHourControl">
+							<h3>We are 
+								<strong ng-if="bizHours.isOperating()">open</strong> 
+								<strong ng-if="!bizHours.isOperating()">closed</strong>
+
+								now.
+							</h3>
 						</div>
 						<div class="business-hours">
 							<p>Business Hours: 10:00am to 11:00pm, Monday through Saturday.</p>

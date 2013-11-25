@@ -25,7 +25,7 @@ h3, h4 {
 body {
 	font-weight: 300;
 	background-color: rgba(216, 217, 219, 1);
-	font-size: 22px;
+	font-size: 20px;
 	color: #FFF;
 	text-rendering: optimizeLegibility; 
 }
@@ -41,6 +41,10 @@ a:hover {
 
 a:visited {
 	text-decoration: none;
+}
+
+td a{
+	color: rgba(0, 0, 0, 1);
 }
 
 .btn:hover {
@@ -169,6 +173,14 @@ footer .row {
 	background-image: url(../img/pizza-oven.jpg);
 }
 
+.cartIntro .alert-warning {
+	font-size: 80%;
+}
+
+.order-summary {
+	font-size: 70%;
+	padding-top: 55px;
+}
 
 .biz-info .info-module {
 	padding-left: 20px;
@@ -183,15 +195,7 @@ footer .row {
 	padding-left: 5px;
 }
 
-.info-module .info-content p {
-	font-size: 90%;
-}
 
-.info-content .info-enum {
-	padding-left: 20px;
-	padding-right: 40px;
-	font-family: 'Georgia';
-}
 
 .content {
 	background-color: #FFF;
